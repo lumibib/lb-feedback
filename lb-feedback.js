@@ -18,8 +18,8 @@ function lbFeedback(options) {
         bg: "#dddddd",
         hover_color: "#ffffff",
         hover_bg: "#eeeeee",
-        freshchat_token: "6531056d-7b8a-496a-bea3-60d08748bcc9",
-        freshdesk_widget_id: "80000004502"
+        freshchat_token: null,
+        freshdesk_widget_id: null
     };
     options = {
         ...defaultOptions,
@@ -265,24 +265,3 @@ a.lbf-button-content-item a:hover{
 
     this.init();
 }
-
-var feedback = new lbFeedback({
-    title: "Aide et feedback",
-    //width: "340",
-    bottom_anchor: "90%",
-    label: {
-        help: "Centre d'aide",
-        idea: "Suggestion",
-        bug: "Reporter un bug",
-        chat: "Discuter"
-    },
-    title_color: "#ffffff",
-    title_bg: "#222222",
-    icon_bg: "purple",
-    color: "#222222",
-    bg: "#eee",
-    hover_color: "#ffffff",
-    hover_bg: "purple",
-    freshchat_token: "6531056d-7b8a-496a-bea3-60d08748bcc9",
-    freshdesk_widget_id: "80000004502"
-});
